@@ -16,10 +16,11 @@ local sfile, sfileerr=io.open(mpd.modpath.."/songs.txt")
 if not sfile then error("Error opening songs.txt: "..sfileerr) end
 for line in sfile:lines() do
 	if line~="" and line[1]~="#" then
-		local name, timeMinsStr, timeSecsStr, gainStr = string.match(line, "^(%S+)%s+(%d+):([%d%.]+)%s+([%d%.]+)$")
+		local name, timeMinsStr, timeSecsStr, gainStr, title = string.match(line, "^(%S+)%s+(%d+):([%d%.]+)%s+([%d%.]+)%s*(.*)$")
 		local timeMins, timeSecs, gain = tonumber(timeMinsStr), tonumber(timeSecsStr), tonumber(gainStr)
+		if title=="" then title = name end
 		if name and timeMins and timeSecs and gain then
-			mpd.songs[#mpd.songs+1]={name=name, length=timeMins*60+timeSecs, lengthhr=timeMinsStr..":"..timeSecsStr, gain=gain}
+			mpd.songs[#mpd.songs+1]={name=name, length=timeMins*60+timeSecs, lengthhr=timeMinsStr..":"..timeSecsStr, gain=gain, title=title}
 		else
 			minetest.log("warning", "[mpd] Misformatted song entry in songs.txt: "..line)
 		end
@@ -99,7 +100,7 @@ end
 
 mpd.song_human_readable=function(id)
 	local song=mpd.songs[id]
-	return id..": "..song.name.." ["..song.lengthhr.."]"
+	return id..": "..song.title.." ["..song.lengthhr.."]"
 end
 
 minetest.register_privilege("mpd", "may control the music player daemon (mpd) mod")
@@ -140,14 +141,15 @@ minetest.register_chatcommand("mpd_what", {
 	description = "Display the currently played song.",
 	privs = {mpd=true},
 	func = function(name, param)
-	if not mpd.playing then
-		if mpd.time_next and mpd.time_next~=0 then
-			return true,"Nothing playing, "..math.floor(mpd.time_next or 0).." sec. left until next song."
-		else
-			return true,"Nothing playing."
+		if not mpd.playing then
+			if mpd.time_next and mpd.time_next~=0 then
+				return true,"Nothing playing, "..math.floor(mpd.time_next or 0).." sec. left until next song."
+			else
+				return true,"Nothing playing."
+			end
 		end
-	return true,"Playing: "..mpd.song_human_readable(mpd.playing).."\nTime Left: "..math.floor(mpd.song_time_left or 0).." sec."
-end,		
+		return true,"Playing: "..mpd.song_human_readable(mpd.playing).."\nTime Left: "..math.floor(mpd.song_time_left or 0).." sec."
+	end,		
 })
 minetest.register_chatcommand("mpd_next", {
 	params = "[seconds]",
