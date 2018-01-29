@@ -140,7 +140,12 @@ minetest.register_chatcommand("mpd_what", {
 	description = "Display the currently played song.",
 	privs = {mpd=true},
 	func = function(name, param)
-	if not mpd.playing then return true,"Nothing playing, "..math.floor(mpd.time_next or 0).." sec. left until next song." end
+	if not mpd.playing then
+		if mpd.time_next and mpd.time_next~=0 then
+			return true,"Nothing playing, "..math.floor(mpd.time_next or 0).." sec. left until next song."
+		else
+			return true,"Nothing playing."
+		end
 	return true,"Playing: "..mpd.song_human_readable(mpd.playing).."\nTime Left: "..math.floor(mpd.song_time_left or 0).." sec."
 end,		
 })
