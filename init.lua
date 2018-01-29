@@ -12,7 +12,7 @@ if not mpd.modpath then
 end
 --{name, length, gain~1}
 mpd.songs = {}
-local sfile, sfileerr=io.open(mpd.modpath.."/songs.txt")
+local sfile, sfileerr=io.open(mpd.modpath..DIR_DELIM.."songs.txt")
 if not sfile then error("Error opening songs.txt: "..sfileerr) end
 for line in sfile:lines() do
 	if line~="" and line[1]~="#" then
@@ -206,3 +206,7 @@ minetest.register_chatcommand("mvolume", {
 		end
 	end,		
 })
+
+if vote then
+	dofile(mpd.modpath..DIR_DELIM.."vote.lua")
+end
