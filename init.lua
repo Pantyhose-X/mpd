@@ -99,7 +99,9 @@ mpd.next_song=function()
 end
 
 mpd.song_human_readable=function(id)
+	if not tonumber(id) then return "<error>" end
 	local song=mpd.songs[id]
+	if not song then return "<error>" end
 	return id..": "..song.title.." ["..song.lengthhr.."]"
 end
 
@@ -128,6 +130,10 @@ minetest.register_chatcommand("mpd_play", {
 	description = "Play the songs with the given ID (see ids with /mpd_list)",
 	privs = {mpd=true},
 	func = function(name, param)
+		if param=="" then
+			mpd.next_song()
+			return true,"Playing: "..mpd.song_human_readable(mpd.playing)
+		end
 		id=tonumber(param)
 		if id and id>0 and id<=#mpd.songs then
 			mpd.play_song(id)
@@ -185,7 +191,7 @@ minetest.register_chatcommand("mvolume", {
 		end
 		local pvolume=tonumber(param)
 		if not pvolume then
-			return false, "Invalid usage: /mvol [volume level (0-1)]"
+			return false, "Invalid usage: /mvolume [volume level (0-1)]"
 		end
 		pvolume = math.min(pvolume, 1)
 		pvolume = math.max(pvolume, 0)
@@ -196,7 +202,7 @@ minetest.register_chatcommand("mvolume", {
 			if mpd.handles[pname] then
 				minetest.sound_stop(mpd.handles[pname])
 			end
-			return true, "Disabled background music for you. Use /mvol to enable it again."
+			return true, "Disabled background music for you. Use /mvolume to enable it again."
 		end
 	end,		
 })
