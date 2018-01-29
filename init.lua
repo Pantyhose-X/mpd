@@ -1,8 +1,8 @@
 
 mpd={}
 
---config
-mpd.pause_between_songs=30
+
+mpd.pause_between_songs=minetest.settings:get("mpd.pause_between_songs") or 30
 
 --end config
 
