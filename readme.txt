@@ -1,7 +1,7 @@
  
 ### mpd Mod for Minetest
 (c) 2017 orwell96
-This mod is licensed under the WTFPL.
+This mod is licensed under the LGPL 2.1 license.
 
 Adds an easy but powerful background music backend.
 
