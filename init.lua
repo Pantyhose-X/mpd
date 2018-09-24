@@ -14,8 +14,10 @@ end
 mpd.songs = {}
 local sfile, sfileerr=io.open(mpd.modpath..DIR_DELIM.."songs.txt")
 if not sfile then error("Error opening songs.txt: "..sfileerr) end
-for line in sfile:lines() do
-	if line~="" and line[1]~="#" then
+for linent in sfile:lines() do
+	-- trim leading and trailing spaces away
+	local line = string.match(linent, "^%s*(.-)%s*$")
+	if line~="" and string.sub(line,1,1)~="#" then
 		local name, timeMinsStr, timeSecsStr, gainStr, title = string.match(line, "^(%S+)%s+(%d+):([%d%.]+)%s+([%d%.]+)%s*(.*)$")
 		local timeMins, timeSecs, gain = tonumber(timeMinsStr), tonumber(timeSecsStr), tonumber(gainStr)
 		if title=="" then title = name end
