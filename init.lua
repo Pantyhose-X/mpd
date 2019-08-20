@@ -181,7 +181,7 @@ minetest.register_chatcommand("mvolume", {
 	func = function(pname, param)
 		if not param or param=="" then
 			local pvolume=tonumber(mpd.storage:get_string("vol_"..pname))
-			if not pvolume then pvolume=1 end
+			if not pvolume then pvolume=0.5 end
 			if pvolume>0 then
 				return true, "Your music volume is set to "..pvolume.."."
 			else
