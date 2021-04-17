@@ -2,7 +2,7 @@
 mpd={}
 
 
-mpd.pause_between_songs=minetest.settings:get("mpd.pause_between_songs") or 30
+mpd.pause_between_songs=tonumber(minetest.settings:get("mpd_pause_between_songs")) or 30
 
 --end config
 
