@@ -1,15 +1,6 @@
- ### music Mod for Minetest
-[owner]
-name = "orwell96"
+### Universal Declaration of Human Rights Music Pack
 
-#### License of music: CC0
-I use text to generate the ogg
-
-#### License of source code:LGPL-2.1-only
-
-#### Universal Declaration of Human Rights Music Pack
-
-### Usage: 
+#### Usage: 
 
 For all players:
 
@@ -20,7 +11,7 @@ With mpd privilege: <br>
 `/music_stop`: stop the current song. Unless /mpd_play or /mpd_next are invoked, no more music is played <br>
 `/music_next` [time]: Play the next song after [time] seconds, immediately if omitted. <br>
 ## Votes: <br>
-This mod integrates with the [vote]((https://content.minetest.net/metapackages/vote/) mod by rubenwardy <br>
+This mod integrates with the [vote] mod by rubenwardy (https://content.minetest.net/metapackages/vote/) <br>
 `/vote_music_next` - vote to start next song <br>
 `/vote_music_play` <id> - Vote to play certain sing <br>
 	
@@ -31,9 +22,15 @@ This mod integrates with the [vote]((https://content.minetest.net/metapackages/v
 	
 [Universal Declaration of Human Rights](https://www.un.org/en/about-us/universal-declaration-of-human-rights) Provide United Nations
 
+
+	
+#### License of music: CC0
+I use text to generate the ogg
+
+#### License of source code:LGPL-2.1-only
 This mod is a fork of [mpd](https://content.minetest.net/packages/orwell/mpd/), which itself is a fork
 
-
+---
 
 The Universal Declaration of Human Rights (UDHR) is a milestone document in the history of human rights. Drafted by representatives with different legal and cultural backgrounds from all regions of the world, the Declaration was proclaimed by the United Nations General Assembly in Paris on 10 December 1948 (General Assembly resolution 217 A) as a common standard of achievements for all peoples and all nations. It sets out, for the first time, fundamental human rights to be universally protected and it has been translated into over 500 languages. The UDHR is widely recognized as having inspired, and paved the way for, the adoption of more than seventy human rights treaties, applied today on a permanent basis at global and regional levels (all containing references to it in their preambles). 
 
