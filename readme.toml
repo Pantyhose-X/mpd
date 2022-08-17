@@ -20,7 +20,6 @@ This mod integrates with the [vote](https://content.minetest.net/metapackages/vo
 
 [balabolka](http://www.cross-plus-a.com/balabolka.htm) Provide music production software.
 	
-
 #### License of source code:LGPL-2.1-only
 This mod is a fork of [mpd](https://content.minetest.net/packages/orwell/mpd/), which itself is a fork
 
@@ -28,4 +27,4 @@ This mod is a fork of [mpd](https://content.minetest.net/packages/orwell/mpd/), 
 https://en.wikisource.org/wiki/Universal_Declaration_of_Human_Rights
 
 #### License of music:CC0
-I use text to generate the ogg
+I use https://en.wikisource.org/wiki/Universal_Declaration_of_Human_Rights to generate the ogg
