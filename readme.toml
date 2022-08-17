@@ -1,0 +1,31 @@
+### [Universal Declaration of Human Rights](https://en.wikisource.org/wiki/Universal_Declaration_of_Human_Rights) Music Pack
+
+#### Usage: 
+
+For all players:
+
+`/mvolume` <volume>  Set your individual music volume or disable background music (/mvolume 0). Saved across server restarts. <br>
+`/music_list`: list available music <br>
+With mpd privilege: <br>
+`/music_play` <id>: play a song <br>
+`/music_stop`: stop the current song. Unless /mpd_play or /mpd_next are invoked, no more music is played <br>
+`/music_next` [time]: Play the next song after [time] seconds, immediately if omitted. <br>
+## Votes: <br>
+This mod integrates with the [vote](https://content.minetest.net/metapackages/vote/) mod by rubenwardy  <br>
+`/vote_music_next` - vote to start next song <br>
+`/vote_music_play` <id> - Vote to play certain sing <br>
+	
+	
+### Credits and Ackowledgements
+
+[balabolka](http://www.cross-plus-a.com/balabolka.htm) Provide music production software.
+	
+
+#### License of source code:LGPL-2.1-only
+This mod is a fork of [mpd](https://content.minetest.net/packages/orwell/mpd/), which itself is a fork
+
+#### License of Text:CC BY-SA 3.0
+https://en.wikisource.org/wiki/Universal_Declaration_of_Human_Rights
+
+#### License of music:CC0
+I use text to generate the ogg
