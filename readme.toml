@@ -23,8 +23,55 @@ This mod integrates with the [vote](https://content.minetest.net/metapackages/vo
 #### License of source code:LGPL-2.1-only
 This mod is a fork of [mpd](https://content.minetest.net/packages/orwell/mpd/), which itself is a fork
 
-#### License of Text:CC BY-SA 3.0
-https://en.wikisource.org/wiki/Universal_Declaration_of_Human_Rights
 
 #### License of music:CC0
 I use https://en.wikisource.org/wiki/Universal_Declaration_of_Human_Rights to generate the ogg
+
+#### License of Text
+[Universal Declaration of Human Rights (UDHR)](https://unicode.org/udhr/index.html)
+[Unicode Data Unicode® Copyright and Terms of Use](https://www.unicode.org/copyright.html)
+[Universal Declaration of Human Rights](https://documents-dds-ny.un.org/doc/RESOLUTION/GEN/NR0/043/88/PDF/NR004388.pdf)
+
+##### For the English and the French versions, the only plausible copyright holder is the United Nations, and so they are the only ones who can either assert they have no copyright
+##### That being said, it would make absolutely no sense for the United Nations to make the reproduction of the UDHR difficult in any way. The [OHCHR](https://www.ohchr.org/en/human-rights/universal-declaration/universal-declaration-human-rights/about-universal-declaration-human-rights-translation-project) has been aware of the [UDHR in Unicode project](https://unicode.org/udhr/index.html) since 2005, and has never raised any objection.
+
+##### You may also want to look at https://documents-dds-ny.un.org/doc/RESOLUTION/GEN/NR0/043/88/PDF/NR004388.pdf  which is the record of the resolution adopting the UDHR. Part A is the declaration itself, part D (on page 78) is "Publicity to be given to the Universal Declaration of Human Rights".
+
+```
+PUBLIC!TY TO BE GTVEN TO THE UNIv ERSAL DECLARAT!ON OF HUMAN RIGHTS
+
+Th.e General Assembly,
+
+Considering that the adoption uf the Universal
+Dedaration of Human llights is an historie act,
+destiued to consolidatc world peace through the
+contribution of the United Nations towards the
+liberation of rndividuals frnm the nnjustified
+oppression and coustraint to whidi they are
+too often subjecte1l,
+
+Considering that the text of the Declaration
+should be disseminated among all peoples
+throughout the world,
+
+l. Recornmends Governments of Membcr States
+to show their adherence to Article 56 of the
+Cherter by using every mean¡¡ within their power
+solemnly to publicize the text of the Declaration
+and to cause it to be disseminated, displayed,
+read and expounded principally in schools and
+other educational institutions, without distinction based on th,~ political :.;tatus of countries or
+territories;
+
+2. Requests the Secretary-General to have
+this Declaration widely disseminated and, to that
+end, to puhlish and distribute texts, not only in
+the official 1:rnguages, but also, using every
+mea ns at bis disposal, in ali languages possible;
+
+3. Invites thc specialized agencies and nongovernmental or¡,;anizatio:r:s of the world to do
+their utrr10st to bring this Dtclaration to the a fontion of thi•ir members.
+
+llu111/r1•,Í 1111d mght!¡-tl,zrd ¡den11rJ meeting.
+1 fJ n-cember 19 !,R.
+```
