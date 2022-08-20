@@ -16,26 +16,26 @@ This mod integrates with the [vote](https://content.minetest.net/metapackages/vo
 `/vote_music_play` <id> - Vote to play certain sing <br>
 	
 	
-### Credits and Ackowledgements
-
+## License
+Credits and Ackowledgements <br>
 [balabolka](http://www.cross-plus-a.com/balabolka.htm) Provide music production software.
 	
 #### License of source code:LGPL-2.1-only
 This mod is a fork of [mpd](https://content.minetest.net/packages/orwell/mpd/), which itself is a fork
 
-
 #### License of music:CC0
 I use https://en.wikisource.org/wiki/Universal_Declaration_of_Human_Rights to generate the ogg
+	
+#### License of Text 
+[Universal Declaration of Human Rights (UDHR)](https://unicode.org/udhr/index.html) <br>
+[Unicode Data Unicode® Copyright and Terms of Use](https://www.unicode.org/copyright.html) <br>
+[Universal Declaration of Human Rights](https://documents-dds-ny.un.org/doc/RESOLUTION/GEN/NR0/043/88/PDF/NR004388.pdf) <br>
 
-#### License of Text
-[Universal Declaration of Human Rights (UDHR)](https://unicode.org/udhr/index.html)
-[Unicode Data Unicode® Copyright and Terms of Use](https://www.unicode.org/copyright.html)
-[Universal Declaration of Human Rights](https://documents-dds-ny.un.org/doc/RESOLUTION/GEN/NR0/043/88/PDF/NR004388.pdf)
+For the English and the French versions, the only plausible copyright holder is the United Nations, and so they are the only ones who can either assert they have no copyright <br>
+	
+That being said, it would make absolutely no sense for the United Nations to make the reproduction of the UDHR difficult in any way. The [OHCHR](https://www.ohchr.org/en/human-rights/universal-declaration/universal-declaration-human-rights/about-universal-declaration-human-rights-translation-project) has been aware of the [UDHR in Unicode project](https://unicode.org/udhr/index.html) since 2005, and has never raised any objection. <br>
 
-##### For the English and the French versions, the only plausible copyright holder is the United Nations, and so they are the only ones who can either assert they have no copyright
-##### That being said, it would make absolutely no sense for the United Nations to make the reproduction of the UDHR difficult in any way. The [OHCHR](https://www.ohchr.org/en/human-rights/universal-declaration/universal-declaration-human-rights/about-universal-declaration-human-rights-translation-project) has been aware of the [UDHR in Unicode project](https://unicode.org/udhr/index.html) since 2005, and has never raised any objection.
-
-##### You may also want to look at https://documents-dds-ny.un.org/doc/RESOLUTION/GEN/NR0/043/88/PDF/NR004388.pdf  which is the record of the resolution adopting the UDHR. Part A is the declaration itself, part D (on page 78) is "Publicity to be given to the Universal Declaration of Human Rights".
+ You may also want to look at [Universal Declaration of Human Rights](https://documents-dds-ny.un.org/doc/RESOLUTION/GEN/NR0/043/88/PDF/NR004388.pdf)   which is the record of the resolution adopting the UDHR. Part A is the declaration itself, part D (on page 78) is "Publicity to be given to the Universal Declaration of Human Rights". <br>
 
 ```
 PUBLIC!TY TO BE GTVEN TO THE UNIv ERSAL DECLARAT!ON OF HUMAN RIGHTS
