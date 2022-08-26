@@ -1,6 +1,0 @@
-#File Name Time Gain Title
-1 2:16 1.9 A MEMORY
-2 0：54 1.9 THE HILLS
-3 1：06 1.9 JUNE
-4 0：35 1.9 AUTUMN
-5 0：39 1.9 A FAIRY HUNT
